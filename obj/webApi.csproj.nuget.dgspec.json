@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lucas\\webApi\\webApi.csproj": {}
+    "c:\\Users\\lucas\\webApi\\webApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lucas\\webApi\\webApi.csproj": {
+    "c:\\Users\\lucas\\webApi\\webApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lucas\\webApi\\webApi.csproj",
+        "projectUniqueName": "c:\\Users\\lucas\\webApi\\webApi.csproj",
         "projectName": "webApi",
-        "projectPath": "C:\\Users\\lucas\\webApi\\webApi.csproj",
+        "projectPath": "c:\\Users\\lucas\\webApi\\webApi.csproj",
         "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lucas\\webApi\\obj\\",
+        "outputPath": "c:\\Users\\lucas\\webApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,9 +45,23 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.Entityframeworkcore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "dbup-add-migration": {
+              "target": "Package",
+              "version": "[1.3.0, )"
             }
           },
           "imports": [
